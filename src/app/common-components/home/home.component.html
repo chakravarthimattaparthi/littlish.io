@@ -1,0 +1,279 @@
+<app-header></app-header>
+<section class="header-content">
+    <div class="overlay-1"></div>
+    <div class="container">
+        <div class="relative">
+            <!-- <div class="animation-text-wrapper">
+                Littlish
+                <div id=flip>
+                    <div>
+                        <div><span class="text">Work</span></div>
+                    </div>
+                    <div>
+                        <div><span class="text">Kids</span></div>
+                    </div>
+                    <div>
+                        <div><span class="text">Everything</span></div>
+                    </div>
+                </div>
+                AweSoMe!
+            </div> -->
+            <div class="title-wrapper">
+                <h2 [ngClass]="loading == true ? 'animate__animated animate__fadeInUp top-title delay-title-1' : 'animate__animated animate__fadeOutDown delay-title-2 top-title'" class="top-title">{{topTitle}}</h2>
+                <h3 [ngClass]="loading == true ? 'animate__animated animate__fadeInUp bottom-title delay-title-2': 'animate__animated animate__fadeOutDown delay-title-1 bottom-title'" class="bottom-titile">{{bottomTitle}}</h3>
+            </div>
+            <div class="child-img">
+                <img [ngClass]="loading == true ? 'animate__animated animate__backInUp' : 'animate__animated animate__bounceOutDown'" src='./assets/images/slide{{loadCount}}-kid.png'>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section id="somthing-section">
+    <h2 class="quote">Children learn as they play.</h2>
+</section>
+<section id="about-us">
+    <div class="container-fluid">
+        <div class="row">
+    <div class="about-left col-lg-4 col-sm-4">
+        <img src="assets/images/about-us.png">
+    </div>
+    <div class="about-right col-lg-8 col-sm-8">
+        <h2 class="section-heading">About Us</h2>
+        <h4 class="section-sub-heading">Welcome to Kidko Kindergarten</h4>
+        <p class="content">Cupidatat non proident sunt culpa qui officia
+            deserunt mollit anim idest laborum Cupidatat
+            non proident sunt culpa qui officia deserunt
+            mollit anim idest laborum sed ut perspiciatis
+            unde omnis iste natuserror sit voluptatem
+            accusantium doloremque laudantium, totam
+            rem aperiam eaque ipsa quae ab illo inventore
+            veritatis et quasi architecto beatae.</p>
+            <p class="content">Cupidatat non proident sunt culpa qui officia
+                deserunt mollit anim idest laborum Cupidatat
+                non proident sunt culpa qui officia deserunt
+                mollit anim idest laborum sed ut perspiciatis
+                unde omnis iste natuserror sit voluptatem
+                accusantium doloremque laudantium, totam
+                rem aperiam eaque ipsa quae ab illo inventore
+                veritatis et quasi architecto beatae.</p>
+                <p class="content">Cupidatat non proident sunt culpa qui officia
+                    deserunt mollit anim idest laborum Cupidatat
+                    non proident sunt culpa qui officia deserunt
+                    mollit anim idest laborum sed ut perspiciatis
+                    unde omnis iste natuserror sit voluptatem
+                    accusantium doloremque laudantium, totam
+                    rem aperiam eaque ipsa quae ab illo inventore
+                    veritatis et quasi architecto beatae.</p>
+            <button class="littlish-primary-button">Contact Us</button>
+    </div>
+    </div>
+    </div>
+</section>
+<section id="video-section" class="video-section-wrapper">
+    <!-- <div id="leafContainer"></div>   -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 align-center">
+                <h4 class="video-title">For After School</h4>
+                <app-vjs-player [options]="{autoplay: false, controls: true, sources: [{ src: '../../assets/videos/learn.mp4', type: 'video/mp4' }]}"></app-vjs-player>
+                <span class="download-brochure">Download Brochure</span>
+            </div>
+            <div class="col-md-6">
+                <h4 class="video-title">For Schools</h4>
+                <app-vjs-player [options]="{autoplay: false, controls: true, sources: [{ src: '../../assets/videos/learn.mp4', type: 'video/mp4' }]}"></app-vjs-player>
+                <span class="download-brochure">Download Brochure</span>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="our-products">
+    <div class="container-fluid">
+        <h2 class="product-title">Out Products</h2>
+        <div class="cards-wrapper">
+            <div class="card-block">
+                <div class="littlish-card-image">
+                    <img src="../../../assets/images/card1-image.jpg">
+                </div>
+                <div class="littlish-card-content">
+                    <h2 class="littlish-card-title">After School</h2>
+                    <p class="card-details">Picture encyclupedia
+                        Traceing art
+                        picture assembly
+                        Activities
+                        Flash cards
+                        Creative craft work</p>
+                </div>
+                <div class="littlish-card-footer green">
+                    <div class="card-info-wrapper">
+                        <span class="count">1600</span>
+                        <span class="count-title">Subscribers</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-block">
+                <div class="littlish-card-image">
+                    <img src="../../../assets/images/card1-image.jpg">
+                </div>
+                <div class="littlish-card-content">
+                    <h2 class="littlish-card-title">After School</h2>
+                    <p class="card-details">Picture encyclupedia
+                        Traceing art
+                        picture assembly
+                        Activities
+                        Flash cards
+                        Creative craft work</p>
+                </div>
+                <div class="littlish-card-footer blue">
+                    <div class="card-info-wrapper">
+                        <span class="count">1600</span>
+                        <span class="count-title">Subscribers</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-block">
+                <div class="littlish-card-image">
+                    <img src="../../../assets/images/card1-image.jpg">
+                </div>
+                <div class="littlish-card-content">
+                    <h2 class="littlish-card-title">After School</h2>
+                    <p class="card-details">Picture encyclupedia
+                        Traceing art
+                        picture assembly
+                        Activities
+                        Flash cards
+                        Creative craft work</p>
+                </div>
+                <div class="littlish-card-footer green">
+                    <div class="card-info-wrapper">
+                        <span class="count">1600</span>
+                        <span class="count-title">Subscribers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <section id="video-section" class="video-section-wrapper">
+    <div class="container">
+        <div class="video-wrapper">
+            <video
+            id="my-video"
+            class="video-js"
+            controls
+            preload="auto"
+            width="740"
+            height="416"
+            data-setup='{"techOrder":["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=4XGLPTtn4xQ" }]}'
+          >
+          </video>
+        </div>
+    </div>
+</section> -->
+<section id="services" class="services-wrapper">
+    <div class="container">
+        <div class="services-block-wrapper">
+            <div class="serivce-block delay-1 wow animate__animated animate__flipInX">
+                <div class="serivce-icon-block">
+                    <div class="image-circke">
+                        <img src="./assets/images/earth.png">
+                    </div>
+                </div>
+                <div class="service-content">
+                    <h4 class="service-title">Free Update</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's standard dummy text ever since the 1500s</p>
+                </div>
+            </div>
+            <div class="serivce-block delay-2 wow animate__animated animate__flipInX">
+                <div class="serivce-icon-block">
+                    <div class="image-circke">
+                        <img src="./assets/images/earth.png">
+                    </div>
+                </div>
+                <div class="service-content">
+                    <h4 class="service-title">Free Update</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's standard dummy text ever since the 1500s</p>
+                </div>
+            </div>
+            <div class="serivce-block delay-3 wow animate__animated animate__flipInX">
+                <div class="serivce-icon-block">
+                    <div class="image-circke">
+                        <img src="./assets/images/earth.png">
+                    </div>
+                </div>
+                <div class="service-content">
+                    <h4 class="service-title">Free Update</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's standard dummy text ever since the 1500s</p>
+                </div>
+            </div>
+            <div class="serivce-block wow delay-4 animate__animated animate__flipInX">
+                <div class="serivce-icon-block">
+                    <div class="image-circke">
+                        <img src="./assets/images/earth.png">
+                    </div>
+                </div>
+                <div class="service-content">
+                    <h4 class="service-title">Free Update</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's standard dummy text ever since the 1500s</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--  -->
+<section id="parteners" class="parterner-wrapper">
+    <div class="container">
+        <h2 class="section-heading">Out Trusted partners</h2>
+        <span class="sub-heading">My trusted partners are good</span>
+        <div class="logo-slider customer-logos slider">
+            <div class="slide"><img src="images/school1.jpg"></div>
+            <div class="slide"><img src="images/school2.jpg"></div>
+            <div class="slide"><img src="images/school3.jpg"></div>
+            <div class="slide"><img src="images/school4.jpg"></div>
+            <div class="slide"><img src="images/school5.jpg"></div>
+            <div class="slide"><img src="images/school6.jpg"></div>
+            <div class="slide"><img src="images/school7.jpg"></div>
+            <div class="slide"><img src="images/school8.jpg"></div>
+        </div>
+    </div>
+</section>
+<section id="testimonial" class="testimonial-wrapper">
+    <div class="container">
+        <h2 class="testimonial-heading">Client Testimonial</h2>
+        <p>I am really happy with the Littlish and book designing is really good</p>
+    </div>
+</section>
+
+<section id="news-letter">
+    <div class="container">
+        <div class="news-letter-wrapper wow animate__animated animate__tada">
+            <div class="orange-circle"></div>
+            <h2 class="section-heading align-left">Subscribe For News Letter</h2>
+            <p>For Email Update please Subscribe with mail ID</p>
+            <div class="input-wrapper">
+                <input type="text" placeholder="Enter Email ID">
+                <button type="button">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <section id="footer" class="footer">
+        <div class="container">
+            <div class="about-us-block">
+                <h4 class="footer-titles">About Us</h4>
+                <p>We are good in eduction industry like pro</p>
+                <ul class="social-links">
+                    <li><img src="/assets/images/facebook.png"></li>
+                    <li><img src="/assets/images/twitter.png"></li>
+                    <li><img src="/assets/images/youtube.png"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</footer>

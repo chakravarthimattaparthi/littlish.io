@@ -1,0 +1,682 @@
+.header-wrapper {
+    padding: 20px 0;
+}
+.logo-part img {
+    width: 120px;
+}
+.nav-wrapper ul {
+    float: right;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+.nav-wrapper li {
+    display: inline-block;
+    padding: 5px 10px;
+    color: #f17831;
+    transition: all 1s ease 0s;
+}
+.nav-wrapper li:hover {
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: all 1s ease 0s;
+}
+
+.header-content {
+    height: calc(100vh - 80px);
+    background: #f17831;
+    padding: 40px 0;
+    overflow: hidden;
+}
+.child-img {
+    float: right;
+    width: 50%;
+    position: relative;
+    height: 100%;
+}
+.child-img img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.relative {
+    height: calc(100vh - 130px);
+}
+.title-wrapper {
+    color: #fff;
+    float: left;
+    width: 50%;
+    position: relative;
+    padding-top: 15%;
+}
+.top-title {
+    font-size: 72px;
+}
+.delay-title-1 {
+    animation-delay: 1s;
+}
+.delay-title-2 {
+    animation-delay: 1.8s;
+}
+.bottom-titile {
+    font-size: 34px;
+}
+
+/*******Need to modify******/
+
+.animation-text-wrapper {
+    transform: translateY(-50%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 59px;
+    font-weight: bold;
+    padding-top: 0;
+    position: relative;
+    left: 0;
+    width: auto;
+    top: 50%;
+    display: block;
+  }
+  
+  #flip {
+    height:80px;
+    overflow:hidden;
+  }
+  
+  #flip > div > div {
+    color: #fff;
+    padding: 4px 12px;
+    height: 78px;
+    margin-bottom: 0;
+    display: inline-block;
+  }
+  .text {
+    margin-top: -14px;
+    display: block;
+}
+  
+  #flip div:first-child {
+    animation: show 5s linear infinite;
+  }
+  
+  #flip div div {
+    background:#42c58a;
+  }
+  #flip div:first-child div {
+    background:#4ec7f3;
+  }
+  #flip div:last-child div {
+    background:#DC143C;
+  }
+  
+  @keyframes show {
+    0% {margin-top:-270px;}
+    5% {margin-top:-180px;}
+    33% {margin-top:-180px;}
+    38% {margin-top:-90px;}
+    66% {margin-top:-90px;}
+    71% {margin-top:0px;}
+    99.99% {margin-top:0px;}
+    100% {margin-top:-270px;}
+  }
+  
+/**********************/
+
+.serivce-block {
+    background: #f4fbf7;
+    width: 350px;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    float: left;
+}
+.serivce-icon-block {
+    width: 70px;
+    float: left;
+    text-align: center;
+}
+.service-content {
+    padding: 20px 0;
+    float: left;
+    width: calc(100% - 70px);
+}
+.image-circke {
+    background: #d5f3e1;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+    position: relative;
+}
+.image-circke img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.service-content p {
+    font-size: 12px;
+}
+
+.services-block-wrapper {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 60px 0;
+}
+
+.delay-1 {
+    animation-delay: 0.5s;
+}
+.delay-2 {
+    animation-delay: 1s;
+}
+.delay-3 {
+    animation-delay: 1.5s;
+}
+.delay-4 {
+    animation-delay: 2s;
+}
+
+.video-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+.video-wrapper .video-js .vjs-big-play-button {
+    font-size: 3em;
+    line-height: 1.5em;
+    height: 1.63332em;
+    width: 80px;
+    height: 80px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 0;
+    cursor: pointer;
+    opacity: 1;
+    border: 10px solid rgba(225,225,225,0.5);
+    background-color: rgba(241, 120, 45, 0.7);
+    border-radius: 50%;
+    transition: all 0.4s;
+    transform: translate(-50%, -50%);
+}
+
+.video-wrapper .video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+    content: "\f101";
+    margin-top: 7px;
+}
+
+.video-wrapper .video-js:hover .vjs-big-play-button,.video-wrapper .video-js .vjs-big-play-button:focus {
+    border-color: rgba(225,225,225,0.5);;
+    background-color: #73859f;
+    /* background-color: rgba(115, 133, 159, 0.5); */
+    transition: all 0s;
+}
+.video-wrapper .vjs-playing .vjs-big-play-button {
+    display: none;
+}
+
+.sub-heading {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    tap-highlight-color: transparent;
+    padding: 20px 0 40px;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+/***************test****/
+
+#testimonial {
+    background: #f17831;
+    padding: 40px 0;
+    color: #fff;
+}
+#testimonial p {
+    margin: 0;
+}
+
+.news-letter-wrapper {
+    background: #f4fbf7;
+    border-radius: 20px;
+    margin: 40px 0;
+    width: 60%;
+    margin: 40px auto;
+    padding: 30px 80px;
+    position: relative;
+    overflow: hidden;
+}
+.align-left {
+    text-align: left;
+}
+
+.news-letter-wrapper p {
+    color: #ddd;
+}
+button {
+    border: navajowhite;
+    background: #f17831;
+    color: #fff;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+input[type="text"] {
+    height: 40px;
+    padding: 0 20px;
+    width: 310px;
+    border: 1px solid #eee;
+}
+.orange-circle {
+    background: #f17831;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: -41px;
+    top: -30px;
+}
+
+section#footer {
+    background: #231c2a;
+    color: #fff;
+    padding: 60px 0;
+}
+.about-us-block p {
+    width: 200px;
+}
+
+.social-links img {
+    width: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.social-links li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #f17831;
+    border-radius: 50%;
+    margin-right: 5px;
+    text-align: center;
+    position: relative;
+}
+.social-links {
+    padding: 0;
+    margin: 0;
+}
+.social-links li:first-child img {
+    width: 10px;
+}
+
+/*about**/
+.about-left {
+    background: #f17831;
+    padding: 80px 0;
+    overflow: hidden;
+}
+.about-left img {
+    float: right;
+   
+}
+.overlay-1 {
+    //background: url("../../../assets/images/bg-overlay.png");
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.about-right {
+    padding: 50px;
+    background: url("../../../assets/images/rocket.png");
+    background-color: rgba(241,120,49,0.1);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+/*****/
+
+/*******Video Section**********/
+#video-section {
+    padding: 80px 0;
+    background: linear-gradient(360deg, #f17831 50%, #FFFFFF 50%);
+    position: relative;
+}
+.align-left {
+    text-align: center;
+}
+.video-title {
+    text-align: center;
+    color: #f17831;
+    margin-bottom: 60px;
+    font-weight: bold;
+    font-size: 36px;
+}
+.download-brochure {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+}
+/***************************/
+#somthing-section {
+    padding: 40px 0;
+}
+.quote {
+    text-align: center;
+    color: #f17831;
+    font-size: 42px;
+    font-weight: bold;
+    text-shadow: 1px 2px #ddd;
+    font-family: Shadows Into Light;
+}
+
+
+/*******Card Section***********/
+.card-block {
+    width: 300px;
+    box-shadow: 0px 2px 6px -1px #777;
+    cursor: pointer;
+    bottom: 0;
+    position: relative;
+    transition: all 0.2s ease 0s;
+}
+.card-block:hover {
+    bottom: 10px;
+    transition: all 0.2s ease 0s;
+}
+.littlish-card-image img {
+    width: 100%;
+}
+.littlish-card-content {
+    padding: 20px;
+    background: #fff;
+}
+.littlish-card-title {
+    font-size: 24px;
+}
+.littlish-card-footer {
+    padding: 20px;
+    color: #fff;
+}
+#our-products {
+    padding: 80px 0;
+    //background: linear-gradient(360deg, #f17831 50%, #FFFFFF 50%);
+     background-position: 0px 100%;
+    background-image:url("../../../assets/images/products-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.green {
+    background-color: #2f9210;
+}
+.blue {
+    background-color: #1e72fe;
+}
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.product-title {
+    color: #f17831;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 42px;
+}
+
+/* .card-block
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.card-block:before, .card-block:after
+{
+  content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.card-block:after
+{
+  right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+
+ */
+
+
+
+
+
+
+
+
+
+#leafContainer    
+{   
+    position: absolute;   
+    width: 100%;   
+    height: 100%;   
+}   
+/* This CSS rule is applied to all div elements in the leafContainer div.  
+   It styles and animates each leafDiv.  
+*/  
+#leafContainer > div    
+{   
+    position: absolute;   
+    width: 100px;   
+    height: 100px;   
+  
+    /* We use the following properties to apply the fade and drop animations to each leaf.  
+       Each of these properties takes two values. These values respectively match a setting  
+       for fade and drop.  
+    */  
+    animation-iteration-count: infinite, infinite;   
+    animation-direction: normal, normal;   
+    animation-timing-function: linear, ease-in;   
+}  
+#leafContainer img {
+    width: 20px !important;
+} 
+  
+/* This CSS rule is applied to all img elements directly inside div elements which are  
+   directly inside the leafContainer div. In other words, it matches the ‘img’ elements  
+   inside the leafDivs which are created in the createALeaf() function.  
+*/  
+#leafContainer > div > img {   
+     position: absolute;   
+     width: 100px;   
+     height: 100px;   
+  
+    /* We use the following properties to adjust the clockwiseSpin or counterclockwiseSpinAndFlip  
+       animations on each leaf.  
+       The createALeaf function in the Leaves.js file determines whether a leaf has the   
+       clockwiseSpin or counterclockwiseSpinAndFlip animation.  
+    */  
+     animation-iteration-count: infinite;   
+     animation-direction: alternate;   
+     animation-timing-function: ease-in-out;   
+     transform-origin: 50% -100%;   
+}   
+  
+/* Hides a leaf towards the very end of the animation */  
+@keyframes fade   
+{   
+    /* Show a leaf while into or below 95 percent of the animation and hide it, otherwise */  
+    0%   { opacity: 1; }   
+    95%  { opacity: 1; }   
+    100% { opacity: 0; }   
+}   
+  
+/* Makes a leaf fall from -300 to 600 pixels in the y-axis */  
+@keyframes drop   
+{   
+    /* Move a leaf to -300 pixels in the y-axis at the start of the animation */  
+    0%   { transform: translate(0px, –50px); }   
+    /* Move a leaf to 600 pixels in the y-axis at the end of the animation */  
+    100% { transform: translate(0px, 650px); }   
+}   
+  
+/* Rotates a leaf from -50 to 50 degrees in 2D space */  
+@keyframes clockwiseSpin   
+{   
+    /* Rotate a leaf by -50 degrees in 2D space at the start of the animation */  
+    0%   { transform: rotate(-50deg); }   
+    /*  Rotate a leaf by 50 degrees in 2D space at the end of the animation */  
+    100% { transform: rotate(50deg); }   
+}   
+  
+/* Flips a leaf and rotates it from 50 to -50 degrees in 2D space */  
+@keyframes counterclockwiseSpinAndFlip    
+{   
+    /* Flip a leaf and rotate it by 50 degrees in 2D space at the start of the animation */  
+    0%   { transform: scale(-1, 1) rotate(50deg); }   
+    /* Flip a leaf and rotate it by -50 degrees in 2D space at the end of the animation */  
+    100% { transform: scale(-1, 1) rotate(-50deg); }   
+}   
